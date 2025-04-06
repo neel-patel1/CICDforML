@@ -1,2 +1,2 @@
-# CICDforML
-Automating Training, Evaluation, and Deploying Models using GitHub actions
+# Drug Classification
+Automating Training, Evaluation, and Deploying Models for Drug Classification Problem
