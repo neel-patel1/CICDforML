@@ -55,7 +55,7 @@ print("Accuracy:", str(round(accuracy, 2) * 100) + "%", "F1:", round(f1, 2))
 
 #Save Results
 with open(cwd + "//Results/metrics.txt", "w") as outfile:
-    outfile.write(f"\nAccuracy = {accuracy.round(2)}, F1 Score = {f1.round(2)}.")
+    outfile.write(f"\nAccuracy = {round(accuracy, 2)}, F1 Score = {round(f1, 2)}.")
 
 #Confusion Matrix
 cm = confusion_matrix(y_test, predictions, labels=pipe.classes_)
