@@ -1,5 +1,3 @@
-
-
 install:
     pip install --upgrade pip &&\
     pip install -r requirements.txt
@@ -15,5 +13,7 @@ eval:
     cat ./Results/metrics.txt >> report.md
     echo '\n## Confusion Matrix Plot' >> report.md
     echo '![Confusion Matrix](./Results/model_results.png)' >> report.md
+    cml comment create report.md
+
     huggingface-cli login --token $HUGGINGFACE_TOKEN --add-to-git-credential
     cml comment create report.md
